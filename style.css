@@ -10,6 +10,7 @@ body {
     justify-content: space-around;
     align-items: center;
     font-family: 'Macondo', cursive;
+    overflow-y: scroll;
 }
 
 
@@ -39,7 +40,7 @@ body {
     justify-content: space-around;
     align-items: center;
     font-size: 1.5rem;
-    
+
 }
 
 #fightPlace {
@@ -48,15 +49,17 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}   
+}
 
 
 #btn1 {
     background-color: #e1ba89;
 }
+
 #btn2 {
     background-color: #53e19c;
 }
+
 #btn3 {
     background-color: #c38cd8;
 }
@@ -117,8 +120,8 @@ body {
 }
 
 .image {
-width: 200px;
-height: 150px;
+    width: 200px;
+    height: 150px;
 }
 
 #versus {
@@ -127,24 +130,77 @@ height: 150px;
     font-family: 'Roboto Mono', monospace;
 }
 
-#playerDisplay, #computerDisplay {
+#playerDisplay,
+#computerDisplay {
     font-size: 2rem;
 }
 
+
+#btn1 {
+    position: relative;
+    animation: mymove 5s;
+}
+
+
+@keyframes mymove {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+#btn2 {
+    position: relative;
+    animation: mymove2 5s;
+}
+
+
+@keyframes mymove2 {
+    from {
+        bottom: -200px;
+    }
+
+    to {
+        bottom: 0px;
+    }
+}
+
+#btn3 {
+    position: relative;
+    animation: mymove3 5s;
+}
+
+
+@keyframes mymove3 {
+    from {
+        right: -200px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+
+
+
 @media (max-width: 640px) {
-    
-    
+
+
     #buttonsContainer {
         flex-direction: column;
     }
 
-    #scoreSection{
+    #scoreSection {
         flex-direction: column;
     }
-    
+
     .image {
         width: 160px;
         height: 100px;
-        }
+    }
 
 }

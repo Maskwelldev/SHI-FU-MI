@@ -4,9 +4,9 @@ let playerSelection = btn1.addEventListener('click', shiFunction) || btn2.addEve
 let playerScore = 0;
 let AIScore = 0;
 let imgArray = [
-    "<img src=\"/icons/rock-svgrepo-com.svg\" width=\"200px\" height=\"150px\">",
-    "<img src=\"/icons/leaf-svgrepo-com.svg\" width=\"200px\" height=\"150px\">",
-    "<img src=\"/icons/scissors-svgrepo-com.svg\" width=\"200px\" height=\"150px\">"
+    "<img src=\"/icons/rock-svgrepo-com.svg\" class=\"image\">",
+    "<img src=\"/icons/leaf-svgrepo-com.svg\" class=\"image\">",
+    "<img src=\"/icons/scissors-svgrepo-com.svg\" class=\"image\">"
     ]
 
 
@@ -27,7 +27,9 @@ function shiFunction() {
     scorePlayer.innerHTML = `Your score : ${playerScore}`;
     scoreAI.innerHTML = `AI score : ${AIScore}`;
     computerDisplay.innerHTML = imgArray[AISelector];
+    // document.getElementsByClassName('image').classList.add("imageResize");
     playerDisplay.innerHTML = imgArray[choice];
+    // document.getElementsByClassName('image').classList.add("imageResize");
 }
 
 function fuFunction() {
@@ -76,9 +78,7 @@ function miFunction() {
     mi.innerHTML = 'MI';
     union1.innerHTML = '-';
     union2.innerHTML = '-';
-    // playerDisplay.innerHTML = 'YOU';
-    // computerDisplay.innerHTML = 'AI';
-    // document.getElementsByClassName('.union').innerHTML = '-';
+
 
 
     

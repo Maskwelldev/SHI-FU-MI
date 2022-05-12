@@ -37,6 +37,8 @@ body {
     width: 50%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
     
 }
 
@@ -46,7 +48,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+}   
 
 
 #btn1 {
@@ -114,6 +116,11 @@ body {
     transform: translateY(0);
 }
 
+.image {
+width: 200px;
+height: 150px;
+}
+
 #versus {
     font-weight: bold;
     font-size: 2rem;
@@ -130,6 +137,14 @@ body {
     #buttonsContainer {
         flex-direction: column;
     }
+
+    #scoreSection{
+        flex-direction: column;
+    }
     
+    .image {
+        width: 160px;
+        height: 100px;
+        }
 
 }

@@ -1,3 +1,4 @@
+//déclaration des variables que l'on utilisera ensuite
 let choice;
 let playerSelection = btn1.addEventListener('click', shiFunction) || btn2.addEventListener('click', fuFunction) || btn3.addEventListener('click', miFunction);
 let playerScore = 0;
@@ -15,7 +16,7 @@ function shiFunction() {
     // console.log(AISelector);
     if (AISelector == choice) {
         console.log('Deus!')
-    } else if (AISelector == 1) {
+    } else if (AISelector == 1) {   
         console.log('You loose');
         AIScore++;
     } else if (AISelector == 2) {
@@ -75,6 +76,8 @@ function miFunction() {
     mi.innerHTML = 'MI';
     union1.innerHTML = '-';
     union2.innerHTML = '-';
+    // playerDisplay.innerHTML = 'YOU';
+    // computerDisplay.innerHTML = 'AI';
     // document.getElementsByClassName('.union').innerHTML = '-';
 
 

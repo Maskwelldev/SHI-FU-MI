@@ -4,9 +4,9 @@ let playerSelection = btn1.addEventListener('click', shiFunction) || btn2.addEve
 let playerScore = 0;
 let AIScore = 0;
 let imgArray = [
-    "<img src=\"/icons/rock-svgrepo-com.svg\" class=\"image\">",
-    "<img src=\"/icons/leaf-svgrepo-com.svg\" class=\"image\">",
-    "<img src=\"/icons/scissors-svgrepo-com.svg\" class=\"image\">"
+    "<img src=\"icons/rock-svgrepo-com.svg\" class=\"image\">",
+    "<img src=\"icons/leaf-svgrepo-com.svg\" class=\"image\">",
+    "<img src=\"icons/scissors-svgrepo-com.svg\" class=\"image\">"
     ]
 
 

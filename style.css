@@ -13,7 +13,6 @@ body {
     overflow-y: scroll;
 }
 
-
 #shi {
     font-size: 3rem;
     color: #e1ba89;
@@ -32,6 +31,21 @@ body {
 .union {
     font-size: 3rem;
 }
+
+#sentence {
+    color: rgb(150, 150, 150);
+    animation: taadaa 3s infinite;
+    }
+
+@keyframes taadaa { 
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
 
 
 #scoreSection {
@@ -108,19 +122,32 @@ body {
 }
 
 .image {
-    width: 200px;
-    height: 150px;
+    height: 140px;
+}
+
+#imageFilter1 {
+    filter: invert(93%) sepia(70%) saturate(726%) hue-rotate(307deg) brightness(93%) contrast(89%);
+}
+
+#imageFilter2 {
+    filter: invert(96%) sepia(47%) saturate(1025%) hue-rotate(71deg) brightness(89%) contrast(97%);
+}
+
+#imageFilter3 {
+    filter: invert(81%) sepia(16%) saturate(4490%) hue-rotate(208deg) brightness(86%) contrast(95%);
 }
 
 #versus {
     font-weight: bold;
     font-size: 2rem;
     font-family: 'Roboto Mono', monospace;
+    /* animation: taadaa 3s infinite; */
     /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     transform: scale(1);
     animation: pulse-black 2s infinite;
     border-radius: 50%; */
 }
+
 
 
 /* @keyframes pulse-black {
@@ -206,10 +233,18 @@ body {
     }
 }
 
+ /* media query */
+ @media (min-width: 666px ){
+    #buttonsContainer {
+        flex-direction: row;
+        /* width: 100%; */
+    }
+ }
 
 
 
-@media (max-width: 640px) {
+
+@media (max-width: 1110px ){
 
 
     #buttonsContainer {
@@ -242,3 +277,5 @@ body {
         }
     }
 }
+
+/* 667 */

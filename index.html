@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="/icons/yin-yang-solid.svg" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>SHI-FU-MI</title>
+</head>
+<body>
+    <header>
+        <h1 id="title1">
+            <span id="shi"></span>
+            <span id="union1"></span>
+            <span id="fu"></span>
+            <span id="union2"></span>
+            <span id="mi"></span>
+        </h1>
+    </header>
+    <section id="fightPlace">
+        <div id="playerDisplay"></div>
+        <div id="versus">VS</div>
+        <div id="computerDisplay"></div>
+    </section>
+    <section id="scoreSection">
+        <div id="scorePlayer">Your score : 0</div>
+        <div id="scoreAI">AI score : 0</div>
+    </section>
+    <div id="buttonsContainer">
+        <button class="buttons" id="btn1" data-reference="pierre"><img src="/icons/rock-svgrepo-com.svg" height="30" alt="stone">PIERRE</button>
+        <button class="buttons" id="btn2" data-reference="feuille"><img src="/icons/leaf-svgrepo-com.svg" height="30" alt="stone">FEUILLE</button>
+        <button class="buttons" id="btn3" data-reference="ciseaux"><img src="/icons/scissors-svgrepo-com.svg" height="30" alt="stone">CISEAUX</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

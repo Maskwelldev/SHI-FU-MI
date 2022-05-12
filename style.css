@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Macondo', cursive;
+}
+
+
+#shi {
+    font-size: 3rem;
+    color: #e1ba89;
+}
+
+#fu {
+    font-size: 3rem;
+    color: #53e19c;
+}
+
+#mi {
+    font-size: 3rem;
+    color: #c38cd8;
+}
+
+.union {
+    font-size: 3rem;
+}
+
+
+#scoreSection {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#fightPlace {
+    width: 50%;
+    height: 155px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#btn1 {
+    background-color: #e1ba89;
+}
+#btn2 {
+    background-color: #53e19c;
+}
+#btn3 {
+    background-color: #c38cd8;
+}
+
+#buttonsContainer {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons {
+    align-items: center;
+    /* background-color: #e1ba89; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    gap: 10px;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: 10rem;
+}
+
+.buttons:hover,
+.buttons:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.buttons:hover {
+    transform: translateY(-1px);
+}
+
+.buttons:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+#versus {
+    padding-top: 60px;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+@media (max-width: 640px) {
+    
+    
+    #buttonsContainer {
+        flex-direction: column;
+    }
+    
+
+}

@@ -175,11 +175,6 @@ h3 {
     font-weight: bold;
     font-size: 2rem;
     font-family: 'Roboto Mono', monospace;
-    /* animation: taadaa 3s infinite; */
-    /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-    transform: scale(1);
-    animation: pulse-black 2s infinite;
-    border-radius: 50%; */
 }
 
 .versusWhite {
@@ -305,6 +300,22 @@ h3 {
         top: 14px;
         right: 14px;     
     } */
+
+    #shi {
+        font-size: 2rem;
+    }
+    
+    #fu {
+        font-size: 2rem;
+    }
+    
+    #mi {
+        font-size: 2rem;
+        }
+
+    #versus {
+        font-size: 1.2rem;
+        }
 
      #buttonsContainer {
         padding-top: 6px;

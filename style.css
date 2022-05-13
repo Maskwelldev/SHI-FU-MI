@@ -3,6 +3,28 @@
     padding: 0;
 }
 
+#mode {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    background-color: #121212;
+    color: white;
+    width: auto;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    font-weight: bold;
+}
+
+.modeLight {
+    background-color: white;
+}
+
+.scoreLight {
+    color: white;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -11,6 +33,12 @@ body {
     align-items: center;
     font-family: 'Macondo', cursive;
     overflow-y: scroll;
+    background-color: rgb(255, 255, 255);
+    /* background-image: url('/img/photo1.avif'); */
+}
+
+.displayMode {
+    background-color: #121212;
 }
 
 h3 {
@@ -152,6 +180,10 @@ h3 {
     transform: scale(1);
     animation: pulse-black 2s infinite;
     border-radius: 50%; */
+}
+
+.versusWhite {
+    color: white;
 }
 
 

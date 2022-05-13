@@ -1,21 +1,21 @@
-//déclaration des variables que l'on utilisera ensuite
+//déclaration des variables
 let choice;
 let playerSelection = btn1.addEventListener('click', shiFunction) || btn2.addEventListener('click', fuFunction) || btn3.addEventListener('click', miFunction);
 let playerScore = 0;
-let AIScore = 0;
+var AIScore = 0;
 let imgArray = [
     "<img src=\"icons/rock-svgrepo-com.svg\" class=\"image\" id=\"imageFilter1\" alt=\"rock\">",
     "<img src=\"icons/leaf-svgrepo-com.svg\" class=\"image\" id=\"imageFilter2\" alt=\"leaf\">",
     "<img src=\"icons/scissors-svgrepo-com.svg\" class=\"image\" id=\"imageFilter3\" alt=\"scissors\">"
-    ]
-
+]
+mode.addEventListener('click', displaySwitch);
 
 function shiFunction() {
     choice = 0;
     let AISelector = Math.floor(Math.random() * 3);
     if (AISelector == choice) {
         sentence.innerHTML = 'DEUS';
-    } else if (AISelector == 1) {   
+    } else if (AISelector == 1) {
         sentence.innerHTML = 'YOU LOOSE';
         AIScore++;
     } else if (AISelector == 2) {
@@ -26,10 +26,10 @@ function shiFunction() {
     scoreAI.innerHTML = `AI score : ${AIScore}`;
     computerDisplay.innerHTML = imgArray[AISelector];
     document.querySelector("#computerDisplay > img").classList.add('roll');
-
-    // document.getElementsByClassName('image').classList.add("imageResize");
     playerDisplay.innerHTML = imgArray[choice];
-    // document.getElementsByClassName('image').classList.add("imageResize");
+
+    // rampage();
+
 }
 
 function fuFunction() {
@@ -49,6 +49,7 @@ function fuFunction() {
     computerDisplay.innerHTML = imgArray[AISelector];
     document.querySelector("#computerDisplay > img").classList.add('roll');
     playerDisplay.innerHTML = imgArray[choice];
+    // rampage();
 }
 
 function miFunction() {
@@ -68,17 +69,30 @@ function miFunction() {
     computerDisplay.innerHTML = imgArray[AISelector];
     document.querySelector("#computerDisplay > img").classList.add('roll');
     playerDisplay.innerHTML = imgArray[choice];
-    }
+    // rampage();
+}
+
+
+function displaySwitch(){
+    body.classList.toggle('displayMode');
+    versus.classList.toggle('versusWhite');
+    scorePlayer.classList.toggle('scoreLight');
+    scoreAI.classList.toggle('scoreLight');
+}
 
 
 
-    versus.innerHTML = 'VS';
-    shi.innerHTML = 'SHI';
-    fu.innerHTML = 'FU';
-    mi.innerHTML = 'MI';
-    union1.innerHTML = '-';
-    union2.innerHTML = '-';
+versus.innerHTML = 'VS';
+shi.innerHTML = 'SHI';
+fu.innerHTML = 'FU';
+mi.innerHTML = 'MI';
+union1.innerHTML = '-';
+union2.innerHTML = '-';
 
-
-
-    
+// function rampage() {
+//     if ((playerScore > 10) && (AIScore < 10)) {
+//         alert('WIN')
+//     } else if ((AIScore > 10) && (playerScore < 10)) {
+//         alert('LOST')
+//     };
+// }

@@ -7,7 +7,8 @@ let imgArray = [
     "<img src=\"icons/rock-svgrepo-com.svg\" class=\"image\" id=\"imageFilter1\" alt=\"rock\">",
     "<img src=\"icons/leaf-svgrepo-com.svg\" class=\"image\" id=\"imageFilter2\" alt=\"leaf\">",
     "<img src=\"icons/scissors-svgrepo-com.svg\" class=\"image\" id=\"imageFilter3\" alt=\"scissors\">"
-]
+]   
+//switch light et dark mode
 mode.addEventListener('click', displaySwitch);
 
 //fonctions

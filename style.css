@@ -5,8 +5,8 @@
 
 #mode {
     position: fixed;
-    top: 18px;
-    right: 18px;
+    top: 24px;
+    right: 24px;
     background-color: #121212;
     color: white;
     width: auto;
@@ -15,6 +15,12 @@
     height: 20px;
     border: none;
     font-weight: bold;
+    animation: pulse 5s;
+    animation-iteration-count: infinite;
+}
+
+#mode:hover {
+    
 }
 
 .modeLight {
@@ -34,7 +40,6 @@ body {
     font-family: 'Macondo', cursive;
     overflow-y: scroll;
     background-color: #fcfcfc;
-    /* background-image: url('/img/photo1.avif'); */
 }
 
 .displayMode {
@@ -67,17 +72,17 @@ h3 {
 #sentence {
     color: rgb(150, 150, 150);
     animation: taadaa 3s infinite;
+}
+
+@keyframes taadaa {
+    0% {
+        opacity: 0;
     }
 
-@keyframes taadaa { 
-    0% {
-      opacity: 0;
-    }
-  
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
 
 
 #scoreSection {
@@ -183,29 +188,29 @@ h3 {
 
 
 
-/* @keyframes pulse-black {
+@keyframes pulse {
     0% {
-      transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
     }
-    
+
     70% {
-      transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
     }
-    
+
     100% {
-      transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
-  } */
+}
 
 
 #playerDisplay,
 #computerDisplay {
     font-size: 2rem;
     width: 120px;
-    
+
 }
 
 .roll {
@@ -216,14 +221,14 @@ h3 {
     from {
         /* opacity: 0; */
         transform: rotate(0deg) scale(0);
-        
+
     }
 
     to {
         transform: rotate(-720deg) scale(1);
-        
-        
-    }   
+
+
+    }
 }
 
 #btn1 {
@@ -283,18 +288,18 @@ h3 {
     }
 }
 
- /* media query */
- @media (min-width: 666px ){
+/* media query */
+@media (min-width: 666px) {
     #buttonsContainer {
         flex-direction: row;
         /* width: 100%; */
     }
- }
+}
 
 
 
 
-@media (max-width: 1110px) and (min-height: 504px){
+@media (max-width: 1110px) and (min-height: 504px) {
 
     /* #mode {
         top: 14px;
@@ -304,20 +309,20 @@ h3 {
     #shi {
         font-size: 2rem;
     }
-    
+
     #fu {
         font-size: 2rem;
     }
-    
+
     #mi {
         font-size: 2rem;
-        }
+    }
 
     #versus {
         font-size: 1.2rem;
-        }
+    }
 
-     #buttonsContainer {
+    #buttonsContainer {
         padding-top: 6px;
         flex-direction: column;
         gap: 6px;
@@ -337,17 +342,17 @@ h3 {
         width: 120px;
         height: 80px;
     }
-    
+
     #btn2 {
         animation: mymove2 4s;
     }
-    
-    
+
+
     @keyframes mymove2 {
         from {
             opacity: 0;
         }
-    
+
         to {
             opacity: 1;
         }

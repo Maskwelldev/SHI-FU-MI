@@ -13,6 +13,10 @@ body {
     overflow-y: scroll;
 }
 
+h3 {
+    height: 22px;
+}
+
 #shi {
     font-size: 3rem;
     color: #e1ba89;
@@ -20,12 +24,12 @@ body {
 
 #fu {
     font-size: 3rem;
-    color: #53e19c;
+    color: #8acf80;
 }
 
 #mi {
     font-size: 3rem;
-    color: #c38cd8;
+    color: #dfb6ef;
 }
 
 .union {
@@ -74,6 +78,8 @@ body {
 }
 
 .buttons {
+    display: flex;
+    justify-content: center;
     align-items: center;
     /* background-color: #e1ba89; */
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -86,7 +92,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
     font-weight: 600;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 10px;
     line-height: 1.25;
     margin: 0;
@@ -126,15 +132,15 @@ body {
 }
 
 #imageFilter1 {
-    filter: invert(93%) sepia(70%) saturate(726%) hue-rotate(307deg) brightness(93%) contrast(89%);
+    filter: invert(78%) sepia(42%) saturate(337%) hue-rotate(349deg) brightness(94%) contrast(86%);
 }
 
 #imageFilter2 {
-    filter: invert(96%) sepia(47%) saturate(1025%) hue-rotate(71deg) brightness(89%) contrast(97%);
+    filter: invert(69%) sepia(36%) saturate(434%) hue-rotate(66deg) brightness(104%) contrast(87%);
 }
 
 #imageFilter3 {
-    filter: invert(81%) sepia(16%) saturate(4490%) hue-rotate(208deg) brightness(86%) contrast(95%);
+    filter: invert(83%) sepia(35%) saturate(822%) hue-rotate(201deg) brightness(94%) contrast(100%);
 }
 
 #versus {
@@ -175,6 +181,23 @@ body {
     
 }
 
+.roll {
+    animation: roll 1s;
+}
+
+@keyframes roll {
+    from {
+        /* opacity: 0; */
+        transform: rotate(0deg) scale(0);
+        
+    }
+
+    to {
+        transform: rotate(-720deg) scale(1);
+        
+        
+    }   
+}
 
 #btn1 {
     background-color: #e1ba89;
@@ -196,7 +219,7 @@ body {
 }
 
 #btn2 {
-    background-color: #53e19c;
+    background-color: #8acf80;
     position: relative;
     animation: mymove2 4s;
 }
@@ -215,7 +238,7 @@ body {
 }
 
 #btn3 {
-    background-color: #c38cd8;
+    background-color: #dfb6ef;
     position: relative;
     animation: mymove3 4s;
 }
@@ -244,13 +267,19 @@ body {
 
 
 
-@media (max-width: 1110px ){
+@media (max-width: 1110px) and (min-height: 504px){
 
 
-    #buttonsContainer {
+     #buttonsContainer {
         padding-top: 6px;
         flex-direction: column;
         gap: 6px;
+    }
+
+    #sentence {
+        top: 350px;
+        color: rgb(150, 150, 150);
+        animation: taadaa 3s infinite;
     }
 
     #scoreSection {

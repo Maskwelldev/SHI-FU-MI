@@ -13,23 +13,20 @@ let imgArray = [
 function shiFunction() {
     choice = 0;
     let AISelector = Math.floor(Math.random() * 3);
-    // console.log(AISelector);
     if (AISelector == choice) {
-        console.log('Deus')
         sentence.innerHTML = 'DEUS';
     } else if (AISelector == 1) {   
-        console.log('You loose');
         sentence.innerHTML = 'YOU LOOSE';
         AIScore++;
     } else if (AISelector == 2) {
-        console.log('You won');
         sentence.innerHTML = 'YOU WIN';
         playerScore++;
     }
-    console.log(playerScore, AIScore);
     scorePlayer.innerHTML = `Your score : ${playerScore}`;
     scoreAI.innerHTML = `AI score : ${AIScore}`;
     computerDisplay.innerHTML = imgArray[AISelector];
+    document.querySelector("#computerDisplay > img").classList.add('roll');
+
     // document.getElementsByClassName('image').classList.add("imageResize");
     playerDisplay.innerHTML = imgArray[choice];
     // document.getElementsByClassName('image').classList.add("imageResize");
@@ -38,48 +35,42 @@ function shiFunction() {
 function fuFunction() {
     choice = 1;
     let AISelector = Math.floor(Math.random() * 3);
-    // console.log(AISelector);
     if (AISelector == choice) {
-        console.log('Deus')
         sentence.innerHTML = 'DEUS';
-    } else if (AISelector == 0) {
-        console.log('You loose');
+    } else if (AISelector == 2) {
         sentence.innerHTML = 'YOU LOOSE';
         AIScore++;
-    } else if (AISelector == 2) {
-        console.log('You won');
+    } else if (AISelector == 0) {
         sentence.innerHTML = 'YOU WIN';
         playerScore++;
     };
-    console.log(playerScore, AIScore);
     scorePlayer.innerHTML = `Your score : ${playerScore}`;
     scoreAI.innerHTML = `AI score : ${AIScore}`;
     computerDisplay.innerHTML = imgArray[AISelector];
+    document.querySelector("#computerDisplay > img").classList.add('roll');
     playerDisplay.innerHTML = imgArray[choice];
 }
 
 function miFunction() {
     choice = 2;
     let AISelector = Math.floor(Math.random() * 3);
-    // console.log(AISelector);
     if (AISelector == choice) {
-        console.log('Deus')
         sentence.innerHTML = 'DEUS';
     } else if (AISelector == 0) {
-        console.log('You loose');
         sentence.innerHTML = 'YOU LOOSE';
         AIScore++;
     } else if (AISelector == 1) {
-        console.log('You won');
         sentence.innerHTML = 'YOU WIN';
         playerScore++;
     };
-    console.log(playerScore, AIScore);
     scorePlayer.innerHTML = `Your score : ${playerScore}`;
     scoreAI.innerHTML = `AI score : ${AIScore}`;
     computerDisplay.innerHTML = imgArray[AISelector];
+    document.querySelector("#computerDisplay > img").classList.add('roll');
     playerDisplay.innerHTML = imgArray[choice];
     }
+
+
 
     versus.innerHTML = 'VS';
     shi.innerHTML = 'SHI';

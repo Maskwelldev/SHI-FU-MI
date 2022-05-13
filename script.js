@@ -10,6 +10,7 @@ let imgArray = [
 ]
 mode.addEventListener('click', displaySwitch);
 
+//fonctions
 function shiFunction() {
     choice = 0;
     let AISelector = Math.floor(Math.random() * 3);
@@ -27,9 +28,7 @@ function shiFunction() {
     computerDisplay.innerHTML = imgArray[AISelector];
     document.querySelector("#computerDisplay > img").classList.add('roll');
     playerDisplay.innerHTML = imgArray[choice];
-
     // rampage();
-
 }
 
 function fuFunction() {
@@ -72,15 +71,12 @@ function miFunction() {
     // rampage();
 }
 
-
 function displaySwitch(){
     body.classList.toggle('displayMode');
     versus.classList.toggle('versusWhite');
     scorePlayer.classList.toggle('scoreLight');
     scoreAI.classList.toggle('scoreLight');
 }
-
-
 
 versus.innerHTML = 'VS';
 shi.innerHTML = 'SHI';

@@ -33,7 +33,7 @@ body {
     align-items: center;
     font-family: 'Macondo', cursive;
     overflow-y: scroll;
-    background-color: rgb(255, 255, 255);
+    background-color: #fcfcfc;
     /* background-image: url('/img/photo1.avif'); */
 }
 

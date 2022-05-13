@@ -82,8 +82,6 @@ versus.innerHTML = 'VS';
 shi.innerHTML = 'SHI';
 fu.innerHTML = 'FU';
 mi.innerHTML = 'MI';
-union1.innerHTML = '-';
-union2.innerHTML = '-';
 
 // function rampage() {
 //     if ((playerScore > 10) && (AIScore < 10)) {

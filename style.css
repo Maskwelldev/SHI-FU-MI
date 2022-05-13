@@ -301,6 +301,10 @@ h3 {
 
 @media (max-width: 1110px) and (min-height: 504px){
 
+    #mode {
+        top: 14px;
+        right: 14px;     
+    }
 
      #buttonsContainer {
         padding-top: 6px;
